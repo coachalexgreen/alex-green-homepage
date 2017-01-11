@@ -8,7 +8,7 @@
     z-index: 100;
 }
 #bg {
-    background: url("https://fronbasal.github.io/alex-green-homepage/background.jpg") no-repeat;
+    background: url("../background.jpg") no-repeat;
     height: 100vh;
     width: 30%;
     background-size: cover;
