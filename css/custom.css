@@ -1,8 +1,7 @@
 #content {
-    height: 100vh;
+    height: 80vh;
     width: 100%;
     float: left;
-    padding: 15px;
     margin-top: 50px;
     position: absolute;
     z-index: 100;
@@ -11,11 +10,14 @@
     #content {width: 50%;}
 }
 body {
-    background: url("../background.jpg") no-repeat;
-    height: 100vh;
-    width: 50%;
-    background-size: cover;
     background: #ecece9;
     background: linear-gradient(to bottom, #ecece9 0%,#f1f0ed 20%,#e1e1dc 100%);
     overflow-x: hidden;
+}
+p {
+    padding: 3px;
+}
+
+h1 {
+    padding: 2px;
 }
