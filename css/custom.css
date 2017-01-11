@@ -15,6 +15,7 @@
     float: right;
 }
 body {
-    background: #f1f0ed;
+    background: #ecece9;
+    background: linear-gradient(to bottom, #ecece9 0%,#f1f0ed 20%,#e1e1dc 100%);
     overflow: hidden;
 }
