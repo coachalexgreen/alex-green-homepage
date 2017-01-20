@@ -10,6 +10,9 @@
     #content {
         width: 50%;
     }
+    #text {
+        font-size: 1.2em !important;
+    }
 }
 
 body {
@@ -94,7 +97,7 @@ li {
     cursor: pointer;
 }
 
-a {
+navbar>a {
     display: block;
     padding: 8px;
     background-color: #fff;
@@ -113,7 +116,7 @@ h1#title {
 }
 
 p#text {
-    font-size: 1.15em;
+    font-size: 0.9em;
 }
 
 div#content {
@@ -133,12 +136,12 @@ div#bg * {
     padding: 100px;
 }
 
-div#content {
-    padding-bottom: 100vh;
-}
-
 body {
     height: 100% !important;
     max-height: 100vh !important;
     width: 100%;
+}
+
+li {
+    padding: 8px;
 }
