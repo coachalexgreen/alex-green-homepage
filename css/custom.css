@@ -1,11 +1,11 @@
 #content {
     float: left;
-    margin-top: 30px;
     position: absolute;
+    height: 100vh;
     z-index: 100;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 720px) {
     #content {
         width: 50%;
     }
@@ -25,21 +25,53 @@ h1 {
     padding: 2px;
 }
 
-div#bg {
-    height: 100vh;
+#bg {
     width: 100%;
-    background: url("../background.png") center no-repeat;
-    background-size: contain;
+    height: 100%;
+    background: url("https://source.unsplash.com/category/food") center center no-repeat;
+    background-size: cover;
     position: absolute;
 }
 
+#bg:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom right, #002f4b, #dc4225);
+    opacity: .6;
+}
 
+.a {
+    display: flex;
+    justify-content: flex-end;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+}
 
+div#alex {
+    background: url("../background.png") center center no-repeat;
+    background-size: contain;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    background-position-y: 100%;
+    width: 100%;
+    height: 100vh;
+}
+
+@media (min-width: 720px) {
+    #alex {width: 50% !important;}
+}
 
 div#content {
     background: rgba(255, 255, 255, 0.7);
     padding: 5px;
 }
+
 nav {
     width: 100%;
     height: 30px;
@@ -56,7 +88,7 @@ ul {
 
 li {
     float: left;
-    
+    cursor: pointer;
 }
 
 a {
@@ -67,4 +99,14 @@ a {
 
 nav * {
     height: 40px;
+}
+
+nav * {
+    background: rgba(0, 0, 0, 0);
+}
+li {
+    font-size: 1.25em;
+}
+h1#title {
+    padding-top: 3%;
 }
