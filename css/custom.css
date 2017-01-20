@@ -3,6 +3,7 @@
     position: absolute;
     height: 100vh;
     z-index: 100;
+    max-width: 100%;
 }
 
 @media (min-width: 720px) {
@@ -113,4 +114,31 @@ h1#title {
 
 p#text {
     font-size: 1.15em;
+}
+
+div#content {
+    max-height: 100%;
+    overflow: visible;
+}
+
+.container {
+    overflow: visible !important;
+}
+
+div#bg {
+    padding: 100px;
+}
+
+div#bg * {
+    padding: 100px;
+}
+
+div#content {
+    padding-bottom: 100vh;
+}
+
+body {
+    height: 100% !important;
+    max-height: 100vh !important;
+    width: 100%;
 }
