@@ -8,7 +8,7 @@
 
 @media (min-width: 720px) {
     #content {
-        width: 50%;
+        width: 70%;
     }
     #text {
         font-size: 1.2em !important;
@@ -65,11 +65,12 @@ div#alex {
     background-position-y: 100%;
     width: 100%;
     height: 100vh;
+    right: -10%;
 }
 
 @media (min-width: 720px) {
     #alex {
-        width: 50% !important;
+        width: 40% !important;
     }
 }
 
