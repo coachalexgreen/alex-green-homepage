@@ -46,12 +46,18 @@
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
         crossorigin="anonymous"></script>
         <script>
-            $(".nav-container").on("click", function () {
-                $("nav").animate({right: 0}, 1000, function(){
-                    setTimeout(function(){
-                        $("nav").animate({right: "100%"}, 500);
-                    }, 3000);
-                })
+            $('.nav-container').click(function () {
+                var clicks = $(this).data('clicks');
+                if (clicks) {
+                    $("nav").animate({
+                        right: "100%"
+                    }, 500);
+                } else {
+                    $("nav").animate({
+                        right: 0
+                    }, 1000);
+                }
+                $(this).data("clicks", !clicks);
             });
             var data = {
                 text: [{
@@ -59,8 +65,8 @@
                     text: "Liebe Besucher, mein Name ist Alex Green, von Beruf Ernährungsberater und Diätcoach. Durch meine exzellenten Kenntnisse der Biochemie sowie der Makro- und -Mikronährstoffverteilung im menschlichen Körper, bin ich geschätzter Experte für nachhaltige Gewichtsreduktion optimale Ernährung von Kindern, Jugendlichen und Schwangeren lindernde Ernährung bei bestehenden Erkrankungen vegane und rohköstliche Ernährung",
                     img: "img/1.jpg"
                 }, {
-                    title: "Referenzen",
-                    text: "",
+                    title: "",
+                    text: "<img class='referenz' src='img/1.PNG' alt='Referenz'><img class='referenz' src='img/2.PNG' alt='Referenz'><img class='referenz' src='img/3.PNG' alt='Referenz'><img class='referenz' src='img/4.PNG' alt='Referenz'><img class='referenz' src='img/5.PNG' alt='Referenz'><img class='referenz' src='img/6.PNG' alt='Referenz'>",
                     img: "img/2.jpg"
                 }, {
                     title: "Das Challenge-Programm",
@@ -73,26 +79,29 @@
                 }, {
                     title: "Ein Life-Coaching buchen",
                     text: "Meine Passion ist es Menschen zu einem besseren Leben zu verhelfen. Dazu gehören ein gutes Aussehen, körperliche und psychische Gesundheit, Energie, Geld, Erfolg, tiefe, innere Zufriedenheit, persönliches und spirituelles Wachstum, ein hohes Bewusstsein und die Entfaltung der eigenen Persönlichkeit. Buche daher gern mein Life-Coaching mit den Schwerpunkten: - Reprogrammierung des Unterbewusstseins - Erfolgscoaching - Persönlichkeitsarbeit - Bewusstseinsarbeit Tarif: 39,99,- / Stunde 9,99,- / 15 Minuten Kurzberatung Zahlung im Voraus Gemäß § 19 UStG keine Umsatzsteuer enthalten. Gerne können Sie über den Online-Terminkalender einen Termin buchen und ich melde mich zum eingetragenen Termin, gemäß Ihres eingetragenen Wunschmediums, bei Ihnen. Natürlich ist auch eine konventionelle Terminbuchung per Telefon, E-Mail oder WhatsApp möglich.",
-                    img: "img/5.jpg"
+                    img: "img/4.jpg"
                 }, {
                     title: "Als Experte buchen",
                     text: "Egal, ob für ein Interview, einen Gastartikel, eine Radio- oder TV-Show, einen Kongress oder einen Vortrag – gerne trete ich als Ernährungsexperte auf. Räumlichkeiten für Interviews können auf Wunsch gestellt werden. Bitte vereinbaren Sie über den Online-Terminkalender einen Termin. Ich melde mich gemäß Ihres eingetragenen Wunschmediums bei Ihnen um individuelle Konditionen zu besprechen.",
-                    img: "img/6.jpg"
+                    img: "img/4.jpg"
                 }, {
                     title: "Kontakt",
                     text: "Nutze unseren Online-Terminkalender: Klicke auf „Einen Termin vereinbaren“ und sieh sofort, welche Termine frei sind. Wähle Deinen Wunschtag und anschließend Deine Wunschuhrzeit aus. (Uhrzeitangaben Englisch - PM bedeutet Mittags – z.B. 2 PM = 14 Uhr). Vergiss bitte nicht Deine Skype-ID, deine Google Hangouts-ID, oder deine Telefonnummer einzutragen. Pünktlich zum Wunschtermin meldet sich Dein Coach per Videotelefonat oder telefonisch bei Dir. Eine Bestätigung Deines Termins erhälst Du per E-Mail. Natürlich kannst Du auch über Telefon, WhatsApp oder E-Mail einen Termin vereinbaren. Solltest Du einen ganz besonderen Terminwunsch haben, welcher nicht in unserem Online-Terminkalender zur Verfügung steht, dann melde dich bei uns über die Wege der Kontaktaufnahme und wir versuchen diesen besonderen Termin für Dich zu realisieren.Kontaktaufnahme: Geschäftszeiten: Montag bis Sonntag, 14 – 22 Uhr Telefon: 0176 64061121 WhatsApp: 0176 64061121 Skype-ID: Live: info_594822 E-Mail: info@das-challenge-programm.de Social Media: YouTube Facebook Instagram Zahlungsmöglichkeiten: Vorkasse PayPal: info@das-challenge-programm.de Banküberweisung: Alexander Vulcaneanu, IBAN: DE11360605910001711449, BIC: GENODED1SPE",
-                    img: "img/8.jpg"
+                    img: "img/5.jpg"
                 }, {
                     title: "Impressum",
                     text: "Alex Green Beratung Alexander Vulcaneanu Neumühler Str. 105 46149 Oberhausen Tel.: 0176 64061121 E-Mail: info@das-challenge-programm.de",
-                    img: "img/9.jpg"
+                    img: "img/6.jpg"
                 }]
             }
 
             function load(n) {
                 $("#title").html(data.text[n].title);
                 $("#text").html(data.text[n].text);
-                $("#bg").css("background", "url('" + data.text[n].img + "') center center no-repeat");
+                $("#bg").css({
+                    "background": "url('" + data.text[n].img + "') center center no-repeat",
+                    "background-size": "cover"
+                });
             }
         </script>
 </body>
