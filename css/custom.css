@@ -225,3 +225,7 @@ div#socialbar {
 div#content {
     margin-top: 65px;
 }
+
+.img-wrapper li a {
+    padding-left: 25px;
+}
