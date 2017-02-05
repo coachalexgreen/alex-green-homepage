@@ -188,13 +188,6 @@ a.btn {
     transition: all 0.4s ease;
 }
 
-.img-wrapper {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-}
-
 .nav-wrapper:hover {
     -webkit-transition: all 0.4s ease;
     -moz-transition: all 0.4s ease;
@@ -228,4 +221,34 @@ div#content {
 
 .img-wrapper li a {
     padding-left: 25px;
+    padding-right: 10px;
+}
+
+.right {
+    display: flex;
+    align-content: center;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+}
+
+.left {
+    display: flex;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.left img {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    height: 32px;
+}
+
+@media (min-width: 720px) {
+    .left img {
+        height: 48px;
+    }
 }
