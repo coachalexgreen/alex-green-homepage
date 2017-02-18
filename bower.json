@@ -1,0 +1,20 @@
+{
+  "name": "alex-green-homepage",
+  "homepage": "https://github.com/fronbasal/alex-green-homepage",
+  "authors": [
+    "Fronbasal <mail@fronbasal.de>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "skeleton": "^2.0.4"
+  }
+}

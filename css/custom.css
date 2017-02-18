@@ -64,7 +64,7 @@ div#alex {
     background-position-y: 100%;
     width: 100%;
     height: 100vh;
-    right: -10%;
+    right: 0;
 }
 
 @media (min-width: 720px) {
@@ -166,6 +166,7 @@ i#touch {
 
 .referenz {
     width: 100%;
+    margin-top: 2vh;
 }
 
 a.btn {
@@ -229,8 +230,6 @@ div#content {
     align-content: center;
     justify-content: flex-end;
     align-items: center;
-    position: absolute;
-    width: 100%;
 }
 
 .left {
@@ -238,6 +237,9 @@ div#content {
     align-content: center;
     justify-content: flex-start;
     align-items: center;
+    float: right;
+    position: absolute;
+    top: 0.01vh;
 }
 
 .left img {
@@ -251,4 +253,11 @@ div#content {
     .left img {
         height: 48px;
     }
+}
+
+a.linkyminky {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 1.3em;
 }

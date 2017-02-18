@@ -31,6 +31,8 @@
             <li><a onclick="load(5);">Experte</a></li>
             <li><a onclick="load(6);">Kontakt</a></li>
             <li><a onclick="load(7);">Impressum</a></li>
+            <li><a onclick="load(8);">Produktempfehlungen</a></li>
+            <li><a onclick="loadNews();">News</a></li>
         </ul>
     </nav>
     <div id="content">
@@ -60,7 +62,7 @@
                 </a>
             </li>
             <div class="left">
-                <img src="img/star.PNG" height="48">
+                <a href="https://www.facebook.com/pg/coachalexgreen/reviews/" target="_blank"><img src="img/Sterne klein.jpg" height="48"></a>
             </div>
         </div>
     </div>
@@ -89,11 +91,11 @@
                     img: "img/1.jpg"
                 }, {
                     title: "",
-                    text: "<img class='referenz' src='img/star.PNG' alt='Sterne'><img class='referenz' src='img/1.PNG' alt='Referenz'><img class='referenz' src='img/2.PNG' alt='Referenz'><img class='referenz' src='img/3.PNG' alt='Referenz'><img class='referenz' src='img/4.PNG' alt='Referenz'><img class='referenz' src='img/5.PNG' alt='Referenz'><img class='referenz' src='img/6.PNG' alt='Referenz'>",
+                    text: "<a class='linkyminky' href='https://www.facebook.com/pg/coachalexgreen/reviews/', target='_blank'>Alle Bewertungen anschauen</a><img class='referenz' src='img/star.PNG' alt='Sterne'><img class='referenz' src='img/Bewertung 1.png' alt='Referenz'><img class='referenz' src='img/Bewertung 2.png' alt='Referenz'><img class='referenz' src='img/Bewertung 3.png' alt='Referenz'><img class='referenz' src='img/Bewertung 4.png' alt='Referenz'><img class='referenz' src='img/Bewertung 5.png' alt='Referenz'><img class='referenz' src='img/Bewertung 6.png' alt='Referenz'><img class='referenz' src='img/Bewertung 7.JPG' alt='Referenz'><img class='referenz' src='img/Bewertung 8.JPG' alt='Referenz'>",
                     img: "img/2.jpg"
                 }, {
                     title: "Das Challenge-Programm",
-                    text: "Aus jahrelanger praktischer Erfahrung als Diätcoach, habe ich mein einzigartiges Challenge-Programm entwickelt. Der JoJo-Effekt gehört der Vergangenheit an. Dauerhafte Gewichtsreduktion ist garantiert – ohne Punktezählen, Shakes trinken, Kalorien zählen, Ernährungspläne, Sportprogramm oder Hungern. Weitere Informationen zum Programm und zur Buchung finden Sie auf der Challenge - Homepage: <a href='https://das-challenge-programm.de'>das-challenge-programm.de</a>",
+                    text: "<img src='img/challenge.PNG' class='referenz'>Aus jahrelanger praktischer Erfahrung als Diätcoach, habe ich mein einzigartiges Challenge-Programm entwickelt. Der JoJo-Effekt gehört der Vergangenheit an. Dauerhafte Gewichtsreduktion ist garantiert – ohne Punktezählen, Shakes trinken, Kalorien zählen, Ernährungspläne, Sportprogramm oder Hungern. Weitere Informationen zum Programm und zur Buchung finden Sie auf der Challenge - Homepage: <a href='https://das-challenge-programm.de'>das-challenge-programm.de</a>",
                     img: "img/3.jpg"
                 }, {
                     title: "Eine Ernährungsberatung buchen",
@@ -115,15 +117,27 @@
                     title: "Impressum",
                     text: "<b>Alex Green Beratung</b> <br>Alexander Vulcaneanu <br>Neumühler Str. 105 46149 <br>Oberhausen <br>Tel.: 0176 64061121 <br>E-Mail: info@das-challenge-programm.de",
                     img: "img/6.jpg"
+                }, {
+                    title: "Produktempfehlungen",
+                    text:"<h1>Gesundheit</h1><br>Bestes Trinkwasser, sehr günstig:<br><a href='https://www.amazon.de/gp/product/B00FYV9XKS/ref=as_li_tl?ie=UTF8&camp=1638&creative=6742&creativeASIN=B00FYV9XKS&linkCode=as2&tag=wwwcoachalexg-21'>blue green® Water Pro Edelstahl/Schwarz - Destilliergerät mit Glaskanne</a><br>Regelmäßige Einläufe sind sehr heilsam und wichtig:<br><a href='https://www.amazon.de/gp/product/B002PW8ZA8/ref=as_li_tl?ie=UTF8&camp=1638&creative=6742&creativeASIN=B002PW8ZA8&linkCode=as2&tag=wwwcoachalexg-21'>Einlaufbecher P. Jentschura, Einlauf zum selber Machen, zur inneren Reinigung, 1 Liter</a><br>Oregano-Öl ist höchst wirksam gegen unerwünschte Bakterien:<br><a href='https://www.amazon.de/gp/product/B006IOS61C/ref=as_li_tl?ie=UTF8&camp=1638&creative=6742&creativeASIN=B006IOS61C&linkCode=as2&tag=wwwcoachalexg-21'>Athina Oregano Öl, 100% ätherisches Oreganoöl Origanum vulgare hirtum</a><br>Kokosöl ist „Must-have“ in jedem Haushalt. Es ist extrem vielseitig einsetzbar und höchst-wirksam:<br><a href='https://www.amazon.de/gp/product/B01I3KLKQQ/ref=as_li_tl?ie=UTF8&camp=1638&creative=6742&creativeASIN=B01I3KLKQQ&linkCode=as2&tag=wwwcoachalexg-21'>BIO Kokosöl - 1 x 1000mL (1L) - in wiederverschliessbarem Glas</a><br>Das beste Bentonit. Unbedingt täglich einnehmen:<br><a href='https://www.amazon.de/gp/product/B00DUDGSFK/ref=as_li_tl?ie=UTF8&camp=1638&creative=6742&creativeASIN=B00DUDGSFK&linkCode=as2&tag=wwwcoachalexg-21'>Bentonit Mineralerde 400g Pulver | Montmorillonit-Gehalt 95%</a><br>Flohsamenschalen (Psyllium) verwende ich täglich mit Bentonit. Sehr reinigende Wirkung:<br><a href='https://www.amazon.de/gp/product/B0088YR0XK/ref=as_li_tl?ie=UTF8&camp=1638&creative=6742&creativeASIN=B0088YR0XK&linkCode=as2&tag=wwwcoachalexg-21'>Premium indische Flohsamenschalen 99% Reinheit 1 Kg Beutel</a><br>Chlorella-Alge unbedingt jeden Abend einnehmen. Wir entgiften jede Nacht und können mit Chlorella die Gifte ausleiten. Außerdem viele Nährstoffe!<br><a href='https://www.amazon.de/gp/product/B00FU95TTS/ref=as_li_tl?ie=UTF8&camp=1638&creative=6742&creativeASIN=B00FU95TTS&linkCode=as2&tag=wwwcoachalexg-21'>Bio-Chlorella pure, 2000 Presslinge</a><br>Das Wundermittel gegen Bakterien, Parasiten und Viren:<br><a href='https://www.amazon.de/gp/product/B00N9WKO98/ref=as_li_tl?ie=UTF8&camp=1638&creative=6742&creativeASIN=B00N9WKO98&linkCode=as2&tag=wwwcoachalexg-21'>Grapefruitkernen Extrakt (maximale Stärke) 300mg x 90 Kaps</a><br>Wir sind täglich enormen Mengen an Aluminium ausgesetzt. Daher ist die tägliche Einnahme von natürlichem Silizium Pflicht:<br><a href='https://www.amazon.de/gp/product/B014HDG0XG/ref=as_li_tl?ie=UTF8&camp=1638&creative=6742&creativeASIN=B014HDG0XG&linkCode=as2&tag=wwwcoachalexg-21'>Bambus Extrakt mit natürlichen Silizium und Cholin- hochdosiert</a><br>Curcumin ist ein Wundermittel gegen Entzündungen. Außerdem zur Entgiftung des Gehirns.<br><a href='https://www.amazon.de/gp/product/B01505STQ6/ref=as_li_tl?ie=UTF8&camp=1638&creative=6742&creativeASIN=B01505STQ6&linkCode=as2&tag=wwwcoachalexg-21'>Curcumin mit Bioperin 500 mg, Curcuma C3 Komplex, Curcuma Longa Wurzel (120 VEGAN Tabletten)</a><br><h1>Bücher</h1>Das beste Buch über Ernährung.<br><a href='https://www.amazon.de/gp/product/3864010462/ref=as_li_tl?ie=UTF8&camp=1638&creative=6742&creativeASIN=3864010462&linkCode=as2&tag=wwwcoachalexg-21'>China Study: Pflanzenbasierte Ernährung und ihre wissenschaftliche Begründung</a><br><h1>Elektronik</h1><br>Meine Kamera:<br><a href='https://www.amazon.de/gp/product/B00BYPW00I/ref=as_li_tl?ie=UTF8&camp=1638&creative=6742&creativeASIN=B00BYPW00I&linkCode=as2&tag=wwwcoachalexg-21'>Canon EOS 700D SLR-Digitalkamera (18 Megapixel, 7,6 cm (3 Zoll) Touchscreen, Full HD, Live-View)</a><br>Mein Beleuchtungsequipment:<a href='https://www.amazon.de/gp/product/B01MTLOY6Y/ref=as_li_tl?ie=UTF8&camp=1638&creative=6742&creativeASIN=B01MTLOY6Y&linkCode=as2&tag=wwwcoachalexg-21'>OUBO Komplettes Profi Fotostudio</a><br><h1>Haushalt</h1><br>Zahnbürsten ohne Plastik:<br><a href='https://www.amazon.de/gp/product/B01LYXBSC7/ref=as_li_tl?ie=UTF8&camp=1638&creative=6742&creativeASIN=B01LYXBSC7&linkCode=as2&tag=wwwcoachalexg-21'>4er-Pack ♻ Ökologische Hand-Zahnbürste aus nachhaltigem Bambus-Holz mit weichen Natur-Borsten aus Kohle in der biologisch abbaubaren Verpackung ✮ Die beste vegane, weiche Bio-Zahnbürste im Set ✮ 100% BPA-freie Bambus-Zahnbürste ohne Plastik ✮ Hand-Zahnbürste mit Naturborsten aus Bambus-Kohle für umweltfreundliche Frauen, Männer und Kinder</a><br>Ohren reinigen, ohne die Umwelt zu schädigen:<br><a href='https://www.amazon.de/gp/product/B00PC6393M/ref=as_li_tl?ie=UTF8&camp=1638&creative=6742&creativeASIN=B00PC6393M&linkCode=as2&tag=wwwcoachalexg-21'>Medizinischer Ohrenreiniger nach Langenbeck Q-Tip aus rostfreien Edelstahl ink.Etui, lebenslange Garantie</a><br><br>Die Links zu den aufgeführten Produkten hängen mit dem Amazon-Partnerprogramm zusammen. Sie zahlen bei einem Kauf NICHT mehr, sondern den regulären Preis. Es ist lediglich möglich, dass mir eine Provision ausgeschüttet wird."
                 }]
             }
-
             function load(n) {
                 $("#title").html(data.text[n].title);
                 $("#text").html(data.text[n].text);
                 $("#bg").css({
                     "background": "url('" + data.text[n].img + "') center center no-repeat",
                     "background-size": "cover"
+                });
+            }
+            function loadNews(){
+                $.getJSON("/news.json", function(news){
+                    console.log(news);
+                    $("#title").html(" ");
+                    $("#text").html(" ");
+                    $.each(news, function(k,v){
+                        $("#text").append("<br><h1>" + v.title + "</h1><br><p>" + v.text + "</p>");
+                    });
                 });
             }
         </script>
