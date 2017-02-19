@@ -261,3 +261,7 @@ a.linkyminky {
     justify-content: center;
     font-size: 1.3em;
 }
+
+::selection {
+    background: rgba(255, 255, 255, 0.6);
+}
