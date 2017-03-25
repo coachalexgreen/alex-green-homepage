@@ -19,16 +19,16 @@
 <body>
     <div class="card">
         <div class="container">
-            <form action="#!" method="POST">
+            <form action="http://localhost:1337/apply" method="POST">
                 <h1 class="center">In die Liste eintragen</h1>
                 <label for="vorname">Vorname</label>
-                <input type="text" id="vorname" required>
+                <input type="text" name="vorname" required>
                 <label for="nachname">Nachname</label>
-                <input type="text" id="nachname" required>
+                <input type="text" name="nachname" required>
                 <label for="email">Email Adresse:</label>
-                <input type="email" id="email" required>
+                <input type="email" name="email" required>
                 <label for="phone">Telefonnummer (optional)</label>
-                <input type="tel" id="phone">
+                <input type="tel" name="phone">
                 <button type="submit" id="submit">eintragen</button>
             </form>
         </div>
