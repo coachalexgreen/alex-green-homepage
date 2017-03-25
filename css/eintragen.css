@@ -1,0 +1,40 @@
+body {
+    background: linear-gradient(270deg, #16c699, #3b76c8, #e49965);
+    background-size: 600% 600%;
+    -webkit-animation: a 30s ease infinite;
+    -moz-animation: a 30s ease infinite;
+    animation: a 30s ease infinite;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes a {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+.card {
+    height: auto;
+    width: 50%;
+    background: #fff;
+    border-radius: 0.8vh;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.center {
+    text-align: center;
+    padding-top: 5vh;
+}
+input {
+    width: 100%;
+}

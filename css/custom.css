@@ -265,3 +265,9 @@ a.linkyminky {
 ::selection {
     background: rgba(255, 255, 255, 0.6);
 }
+
+img#alex_green_logo {
+    height: 8vh;
+    width: auto;
+    top: -1.5vh;
+}
