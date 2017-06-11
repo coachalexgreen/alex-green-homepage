@@ -12,27 +12,52 @@
     <link rel="stylesheet" href="bower_components/skeleton/css/skeleton.css">
     <link rel="stylesheet" href="css/eintragen.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="js/app.js"></script>
 </head>
 
 <body>
     <div class="card">
         <div class="container">
-            <form action="http://dev.coachalexgreen.de:1337/apply" method="POST">
-                <h1 class="center">In die Liste eintragen</h1>
-                <label for="vorname">Vorname</label>
-                <input type="text" name="vorname" required>
-                <label for="nachname">Nachname</label>
-                <input type="text" name="nachname" required>
-                <label for="email">Email Adresse:</label>
-                <input type="email" name="email" required>
-                <label for="phone">Telefonnummer (optional)</label>
-                <input type="tel" name="phone">
-                <button type="submit" id="submit">eintragen</button>
-            </form>
+            <h1 class="center">In die Liste eintragen</h1>
+            <label for="vorname">Vorname</label>
+            <input type="text" id="vorname" required>
+            <label for="nachname">Nachname</label>
+            <input type="text" id="nachname" required>
+            <label for="email">Email Adresse:</label>
+            <input type="email" id="email" required>
+            <label for="phone">Telefonnummer (optional)</label>
+            <input type="tel" id="phone">
+            <button type="submit" id="submit">eintragen</button>
         </div>
     </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
+    <script>
+        firebase.initializeApp({
+            apiKey: "AIzaSyBYik00emT0ZXUIo47STmRuIz5SqjLd928",
+            authDomain: "kunden-d7a53.firebaseapp.com",
+            databaseURL: "https://kunden-d7a53.firebaseio.com",
+            projectId: "kunden-d7a53",
+            storageBucket: "kunden-d7a53.appspot.com",
+            messagingSenderId: "1083979871588"
+        });
+        firebase.auth().signInAnonymously();
+        firebase.auth().onAuthStateChanged(user => {
+            if (user) {
+                console.log(user);
+                $("#submit").click(() => {
+                    const data = {
+                        vorname: $("#vorname").val(),
+                        nachname: $("#nachname").val(),
+                        email: $("#email").val(),
+                        phone: $("#phone").val()
+                    };
+                    firebase.database().ref("/" + user.uid).set(data).then(() => {
+                        window.location = "/";
+                    });
+                });
+            }
+        });
+    </script>
 </body>
 
 </html>
